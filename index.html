@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemanth Kandula Full Stack Developer & Quantitative Systems Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-mode">
+
+    <svg class="svg-filter-matrix" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <filter id="dof-blur-macro-bg">
+                <feGaussianBlur id="blur-element-bg" stdDeviation="15" />
+            </filter>
+            <filter id="dof-blur-midground">
+                <feGaussianBlur id="blur-element-mid" stdDeviation="4" />
+            </filter>
+            <filter id="dof-blur-foreground">
+                <feGaussianBlur id="blur-element-fore" stdDeviation="0" />
+            </filter>
+        </defs>
+    </svg>
+
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p class="loader-text">INITIALIZING OPTICAL INTERFACE SYSTEMS...</p>
+        </div>
+    </div>
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <div id="scroll-progress"></div>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo">HK<span>.ARCH</span></a>
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link">Mainframe</a>
+                <a href="#about" class="nav-link">Overview</a>
+                <a href="#skills" class="nav-link">Matrix Mapping</a>
+                <a href="#projects" class="nav-link">Deployments</a>
+                <a href="#services" class="nav-link">Vectors</a>
+                <a href="#experience" class="nav-link">Chrono Logs</a>
+                <a href="#contact" class="nav-link">Link Terminal</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="dof-viewport-section">
+            <div class="focal-indicator-mesh">
+                <div class="hud-bracket top-left"></div>
+                <div class="hud-bracket top-right"></div>
+                <div class="hud-bracket bottom-left"></div>
+                <div class="hud-bracket bottom-right"></div>
+                <div class="focal-readout">FOCAL_TARGET: <span id="focal-node-id">MERN_HERO_UNIT</span></div>
+            </div>
+
+            <div id="parallax-container" class="parallax-stage">
+
+                <div class="parallax-layer layer-deep-sky" data-depth="0.08" data-focal-index="4">
+                    <div class="cosmic-grid-pattern"></div>
+                    <div class="nebula-glow-node color-a"></div>
+                    <div class="nebula-glow-node color-b"></div>
+                </div>
+
+                <div class="parallax-layer layer-distant-mountains" data-depth="0.22" data-focal-index="3">
+                    <svg class="mountain-vector-mesh" viewBox="0 0 1440 800" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 550 L300 350 L650 500 L900 250 L1200 600 L1440 400 L1440 800 L0 800 Z" fill="#111625" />
+                        <path d="M100 600 L400 420 L750 550 L1000 320 L1300 650 L1440 500 L1440 800 L100 800 Z" fill="#151b2e" opacity="0.6" />
+                    </svg>
+                </div>
+
+                <div class="parallax-layer layer-midground-structures" data-depth="0.45" data-focal-index="2">
+                    <div class="tech-monolith left-node">
+                        <div class="glowing-circuit-lines"></div>
+                    </div>
+                    <div class="tech-monolith right-node">
+                        <div class="glowing-circuit-lines"></div>
+                    </div>
+                    <div class="energy-beam-core"></div>
+                </div>
+
+                <div class="parallax-layer layer-primary-character" data-depth="0.80" data-focal-index="1">
+                    <div class="character-stance-wrapper">
+                        <div class="hero-mainframe-card glass-card">
+                            <span class="system-status">CORE_MATRIX_ACTIVE</span>
+                            <h1 class="hero-title">Hemanth Kandula</h1>
+                            <h2 class="hero-subtitle">Engineering <span class="typing-text" id="typing"></span></h2>
+                            <p class="hero-desc">MERN Stack Developer & Quantitative Infrastructure Architect specialized in low-latency performance platforms and pristine high-end visual systems.</p>
+                            <div class="hero-actions-row">
+                                <a href="#projects" class="btn btn-primary">Workspace Nodes</a>
+                                <a href="#contact" class="btn btn-secondary">Establish Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="parallax-layer layer-macro-foreground" data-depth="1.35" data-focal-index="0">
+                    <div class="foreground-barrier rock-left"></div>
+                    <div class="foreground-barrier rock-right"></div>
+                </div>
+
+                <div class="parallax-layer layer-interactive-hud" data-depth="0.0" data-focal-index="99">
+                    <div class="hud-telemetry-overlay">
+                        <div class="hud-widget asset-health">
+                            <div class="widget-label">SYSTEM_INTEGRITY</div>
+                            <div class="bar-matrix">
+                                <div class="matrix-block filled"></div>
+                                <div class="matrix-block filled"></div>
+                                <div class="matrix-block filled"></div>
+                                <div class="matrix-block filled"></div>
+                                <div class="matrix-block filled"></div>
+                            </div>
+                        </div>
+                        <div class="hud-widget asset-weapons">
+                            <div class="widget-label">CURRENT_COEFFICIENT</div>
+                            <div class="status-indicator online">OPTIMAL</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="focal-plane-controller-ui">
+                <div class="controller-heading">MANUAL_OPTICAL_DEPTH_OVERRIDE</div>
+                <div class="slider-wrapper">
+                    <input type="range" id="focal-plane-slider" min="0" max="4" step="1" value="1">
+                    <div class="slider-ticks">
+                        <span class="tick" data-index="0">FOREGROUND</span>
+                        <span class="tick active" data-index="1">HERO_PLANE</span>
+                        <span class="tick" data-index="2">MIDGROUND</span>
+                        <span class="tick" data-index="3">BACKGROUND</span>
+                        <span class="tick" data-index="4">DEEP_COSMOS</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title text-center">System Overview // <span class="gradient-text">About Me</span></h2>
+                <div class="about-grid">
+                    <div class="about-bio glass-card">
+                        <h3>The Engineering Mindset</h3>
+                        <p>I operate at the precise intersection of rich database mechanics and pixel-perfect interface deployment. As an Information Technology specialist with a high academic standard, my architectural framework prioritizes asynchronous clean-code structures, modular components, and real-time state orchestration.</p>
+                        <p>Whether configuring complex multi-layered data models using the MERN ecosystem or programming low-latency execution components, I verify design patterns directly to ensure production stability.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card glass-card">
+                            <div class="stat-num" data-target="85">0</div>
+                            <div class="stat-label">CGPA Performance Matrix</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-num" data-target="35">0</div>
+                            <div class="stat-label">CodeVerse Contest Rank</div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-num" data-target="42">0</div>
+                            <div class="stat-label">Asynchronous Modules Scaled</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title text-center">Core Matrix // <span class="gradient-text">Skills & Tech Stack</span></h2>
+                <div class="skills-grid">
+                    <div class="glass-card skill-card">
+                        <h3>Full Stack Infrastructure</h3>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>MongoDB / Express.js / Node.js</span><span>92%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>React.js / Next.js Framework</span><span>90%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python Optimization / AI Mapping</span><span>85%</span></div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card skill-card circular-skills-container">
+                        <h3>Algorithmic Competencies</h3>
+                        <div class="circular-skills">
+                            <div class="circle-skill">
+                                <div class="circle-progress" data-percent="88" style="--percent: 88;">
+                                    <svg>
+                                        <circle cx="45" cy="45" r="35"></circle>
+                                        <circle cx="45" cy="45" r="35" class="circle-fill-bar"></circle>
+                                    </svg>
+                                    <div class="number">88%</div>
+                                </div>
+                                <span>Data Structures (DSA)</span>
+                            </div>
+                            <div class="circle-skill">
+                                <div class="circle-progress" data-percent="82" style="--percent: 82;">
+                                    <svg>
+                                        <circle cx="45" cy="45" r="35"></circle>
+                                        <circle cx="45" cy="45" r="35" class="circle-fill-bar"></circle>
+                                    </svg>
+                                    <div class="number">82%</div>
+                                </div>
+                                <span>Automata Theory</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title text-center">Production Deployments // <span class="gradient-text">Projects</span></h2>
+
+                <div class="filter-container">
+                    <button class="filter-btn active" data-filter="all">All Subsystems</button>
+                    <button class="filter-btn" data-filter="mern">MERN Modules</button>
+                    <button class="filter-btn" data-filter="ai">AI / Quant Nodes</button>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card glass-card tilt" data-category="mern">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder-img img-1"></div>
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-icon" aria-label="View Telemetry"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="overlay-icon" aria-label="Source Hub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">MERN Stack Ecosystem</span>
+                            <h3>MindVault</h3>
+                            <p>Thought preservation framework incorporating advanced node-based idea relationship mapping protocols and voice-capture integration pipelines.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card tilt" data-category="mern">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder-img img-2"></div>
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-icon" aria-label="View Telemetry"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="overlay-icon" aria-label="Source Hub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Full Stack Node</span>
+                            <h3>SustainSphere</h3>
+                            <p>Sustainability management console incorporating structural eco-mapping models, automated footprint validation, and localized gamification matrices.</p>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-card tilt" data-category="ai">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder-img img-3"></div>
+                            <div class="project-overlay">
+                                <div class="overlay-links">
+                                    <a href="#" class="overlay-icon" aria-label="View Telemetry"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="overlay-icon" aria-label="Source Hub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-tag">Python Deep Analysis</span>
+                            <h3>Image Forgery Detection</h3>
+                            <p>Neural network implementation executing structural verification matrices on image layers to locate metadata discrepancies and altered pixels.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title text-center">Service Vectors // <span class="gradient-text">Expertise</span></h2>
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <div class="service-icon-wrapper"><i class="fas fa-cubes"></i></div>
+                        <h3>Full Stack Architecture</h3>
+                        <p>Constructing high availability data layers, modular data-routing schemas, and asynchronous microservices using the complete MERN suite.</p>
+                    </div>
+                    <div class="service-card glass-card">
+                        <div class="service-icon-wrapper"><i class="fas fa-terminal"></i></div>
+                        <h3>Quantitative Logic</h3>
+                        <p>Architecting customized automation models, complex analytical scripts, and execution engines designed for mathematical precision.</p>
+                    </div>
+                    <div class="service-card glass-card">
+                        <div class="service-icon-wrapper"><i class="fas fa-shield-halved"></i></div>
+                        <h3>Network Security Verification</h3>
+                        <p>Auditing platform layouts, encryption algorithms, and secure tokens to shield structural assets against intrusion vectors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="experience-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title text-center">Historical Logs // <span class="gradient-text">Experience</span></h2>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">JAN 2025 - MAR 2025</span>
+                            <h3>Python Developer Intern</h3>
+                            <h4>Codec Technologies India</h4>
+                            <p>Engineered core automated functional arrays, optimized database routing patterns, and constructed analytical logging subsystems to accelerate performance frameworks.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item right">
+                        <div class="timeline-content glass-card">
+                            <span class="timeline-date">APR 2025 - JUN 2025</span>
+                            <h3>Frontend Engineering Core</h3>
+                            <h4>Astute Infocom</h4>
+                            <p>Deployed premium modern UI interfaces, managed intricate micro-interaction hooks, and configured cross-platform fluid layout grids for extreme scalability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title text-center">Data Transmission Link // <span class="gradient-text">Contact Me</span></h2>
+                <div class="contact-wrapper">
+                    <div class="contact-info-panel glass-card">
+                        <h3>Terminal Directives</h3>
+                        <p>Initiate a secure asynchronous data packet transmission below to query architectural services or evaluate execution models.</p>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hemanth.kandula@dev.io</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-location-dot"></i>
+                            <span>Node 127.0.0.1 // AP Matrix</span>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form glass-card" novalidate>
+                        <div class="form-group">
+                            <input type="text" id="name" required class="form-control">
+                            <label for="name" class="floating-label">Identity Marker / Name</label>
+                            <span class="error-msg" id="name-error">Marker configuration required.</span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required class="form-control">
+                            <label for="email" class="floating-label">Routing Endpoint / Email</label>
+                            <span class="error-msg" id="email-error">Invalid transmission routing sequence.</span>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" required class="form-control" rows="5"></textarea>
+                            <label for="message" class="floating-label">Context Payload / Message</label>
+                            <span class="error-msg" id="message-error">Context payload completely absent.</span>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span>Transmit Packet</span> <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="telemetry-dashboard" class="data-matrix-section scroll-reveal">
+            <div class="container">
+                <h2 class="section-title text-center">Optical Control Matrix // <span class="gradient-text">Telemetry Logs</span></h2>
+                <div class="telemetry-grid">
+                    <div class="telemetry-card glass-card">
+                        <h3>Optic Engine Telemetry</h3>
+                        <div class="telemetry-data-row"><span class="label">MOUSE_VECTOR_X:</span><span class="value" id="val-vector-x">0.00</span></div>
+                        <div class="telemetry-data-row"><span class="label">MOUSE_VECTOR_Y:</span><span class="value" id="val-vector-y">0.00</span></div>
+                        <div class="telemetry-data-row"><span class="label">CURRENT_FOCAL_PLANE:</span><span class="value" id="val-focal-plane">1</span></div>
+                    </div>
+                    <div class="telemetry-card glass-card">
+                        <h3>Lens Aberration Metrics</h3>
+                        <div class="telemetry-data-row"><span class="label">BACKGROUND_BLUR_RADIUS:</span><span class="value" id="val-blur-bg">15px</span></div>
+                        <div class="telemetry-data-row"><span class="label">MIDGROUND_BLUR_RADIUS:</span><span class="value" id="val-blur-mid">4px</span></div>
+                        <div class="telemetry-data-row"><span class="label">HERO_BLUR_RADIUS:</span><span class="value" id="val-blur-hero">0px</span></div>
+                    </div>
+                </div>
+                <div class="control-nodes-grid" style="margin-top: 2.5rem;">
+                    <div class="control-card glass-card">
+                        <i class="fas fa-crosshairs control-icon"></i>
+                        <h3>Auto-Focus Node</h3>
+                        <button class="btn btn-primary toggle-node" id="btn-toggle-autofocus">SUSPEND_NODE</button>
+                    </div>
+                    <div class="control-card glass-card">
+                        <i class="fas fa-eye control-icon"></i>
+                        <h3>Focal Guide Render</h3>
+                        <button class="btn btn-secondary toggle-node" id="btn-toggle-guides">ENGAGE_GUIDES</button>
+                    </div>
+                    <div class="control-card glass-card">
+                        <i class="fas fa-bolt control-icon"></i>
+                        <h3>Overdrive Matrix</h3>
+                        <button class="btn btn-secondary toggle-node" id="btn-toggle-overdrive">ENGAGE_OVERDRIVE</button>
+                    </div>
+                </div>
+                <div class="terminal-container glass-card" style="margin-top: 2.5rem;">
+                    <div class="terminal-header">
+                        <div class="terminal-dot red"></div>
+                        <div class="terminal-dot yellow"></div>
+                        <div class="terminal-dot green"></div>
+                        <span class="terminal-title">SYSTEM_LOG_SUBSHELL // OPTICAL_DEPTH_PARALLAX_CORE</span>
+                    </div>
+                    <div class="terminal-body" id="log-terminal-output">
+                        <div class="terminal-line"><span class="timestamp">[20:12:15]</span> <span class="status-ok">SUCCESS</span> Optic core framework initialized securely.</div>
+                        <div class="terminal-line"><span class="timestamp">[20:12:16]</span> <span class="status-ok">SUCCESS</span> Hardware-accelerated SVG blur filters active on target layout nodes.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Hemanth Kandula. System engineered securely via Depth Of Field Parallax Ecosystem modules. All vectors locked.</p>
+            <div class="footer-links">
+                <a href="#hero">Mainframe</a>
+                <a href="#projects">Nodes</a>
+                <a href="#contact">Terminal</a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Return to Apex Top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
